@@ -1,0 +1,78 @@
+<div class="container">
+
+  <div class="jumbotron text-center bg-success text-white">
+    <h1 class="display-4" id="SixGuys">Six Guys Burgers<img id="logo" src="/assets/img/burger-block.png"></h1>
+    <p class="Intro">Welcome to Six Guys Burgers. Voted for the BEST sextuple cheeseburgers!</p>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card border border-success">
+        <div class="card-header bg-danger text-white">
+         What Can I Get For You Today?
+        </div>
+      
+        <div class="card-body">
+          <form class="create-form">
+            <div class="form-group">
+              <label for="burger" id="OrderUp">Please Place Order Here:</label>
+              <input type="text" class="form-control" id="burgerOrder" placeholder="">
+            </div>
+            <button class="btn btn-success" type="submit">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mt-3">
+    <div class="col-md-6 mt-3">
+      <div class="card border border-success">
+        <div class="card-header bg-danger text-white">
+         Burgers
+        </div>
+        <!--These are burgers are ready to be devoured-->
+        <div class="card-body">
+              {{#each burgers}}
+                {{#unless devoured}}
+                  {{> burgers/burger-block devour=false}}
+                {{/unless}}
+              {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mt-3">
+      <div class="card devoured-card">
+        <div class="card-header text-white" id="devoured-card-header">
+         Burgers Devoured
+        </div>
+        <!--Burger has been devoured-->
+        <div class="card-body">
+          {{#each burgers}}
+              {{#if devoured}}
+                {{> burgers/burger-devoured devour=true}}
+              {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="card footer">
+        <div class="card-body footer-body text-white">
+          <h5 class="card-title text-white" id="footertitle">Six Guys Burgers</h5>
+          <p class="card-text" id="footertext">Six Guys Burgers Appreciates You Stopping By, Please Come Again</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+

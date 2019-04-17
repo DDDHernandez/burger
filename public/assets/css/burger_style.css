@@ -1,0 +1,63 @@
+/*Color of Devoured burgers card header*/
+#devoured-card-header  {
+    background-color: #d82323;
+}
+
+.devoured-burger-name {
+    color:  #0bad57;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+}
+
+#SixGuys {
+    font-size: 95px;
+}
+
+.Intro {
+    font-size: 30px;
+}
+
+body {
+    text-align: center;
+    background-image: url("../img/cheeseburger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-body {
+    background-color: #0bad57;
+    text-align: center;
+}
+
+.card-header {
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.devoured-card, 
+.footer {  
+    border-style: solid;
+    border-color: #0bad57;
+}
+
+#logo {
+    height: 85px;
+    width: 85px;
+}
+
+h4 {
+    color: #0bad57;
+}
+
+#footertitle {
+    font-size: 20px;
+}
+
+#footertext {
+    font-size: 18px;
+}
